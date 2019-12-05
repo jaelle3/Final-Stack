@@ -1,0 +1,160 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API for StackOverflow by Jael Olga",
+		"_postman_id": "cc518557-114b-d90e-aff0-97e763c2daf2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sign In",
+			"request": {
+				"url": "http://localhost:9000/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Andrew",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "5",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"url": "http://localhost:9000/createUser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "jaelolga@yahoo.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "notmypassword",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Question",
+			"request": {
+				"url": "http://localhost:9000/createQuestion",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "jaelogla@yahoo.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "question",
+							"value": "What is the meaning of life?",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAnswer",
+			"request": {
+				"url": "http://localhost:9000/createAnswer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "questionid",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "answer",
+							"value": "42",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ListQuestions",
+			"request": {
+				"url": "http://localhost:9000/listQuestions",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

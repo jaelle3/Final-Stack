@@ -1,13 +1,17 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var router = express.Router();
 
+var m = require('../db/dbconnect');
+
 router.get('/', function(req, res, next) {
-    res.send('API is working properly');
+    res.send("Root Discovered!");
 });
+//I moved the files from here to the Index.js.
+//Its easier to test it that way
 
 
 router.post('/testAPI', (req, res)=>{
-
     console.log("Request body", req.body);
     res.status(200).json({
       message:"API post successful",
@@ -17,7 +21,7 @@ router.post('/testAPI', (req, res)=>{
   
 
 
-router.param('/signin', function(req, res, next) {
+router.get('/signin', function(req, res, next) {
     //send username and password
     //Check how to capture param and post variables
     var username = req.param('username');
