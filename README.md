@@ -4,7 +4,7 @@ StackOverflow is a platform for asking questions, where users can ask questions,
 and view answers to a particular question.
 
 ---
-The project was worked on By Kafeero David, Roland Bissaso, Jaelle Amongi, and Antony Nabende.
+The project was worked on By Kafeero David, Roland Bisasso, Jaelle Amongi, and Antony Nabende.
 
 ---
 
